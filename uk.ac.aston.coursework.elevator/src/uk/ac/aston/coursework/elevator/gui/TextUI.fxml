@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" minHeight="600.0" minWidth="800.0" spacing="5.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="Elevator">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Line endX="100.0" startX="-100.0" />
+      <HBox>
+         <children>
+            <VBox HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox prefWidth="200.0">
+                     <children>
+                        <Label text="TICK: " />
+                        <Label fx:id="tickLabel" text="0" />
+                     </children>
+                  </HBox>
+                  <HBox prefWidth="200.0">
+                     <children>
+                        <Label text="Elevator Floor: " />
+                        <Label fx:id="currentFloorLabel" text="0" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label text="People in Elevator: " />
+                        <Label fx:id="inElevatorLabel" text="[ ]" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox prefWidth="200.0">
+                     <children>
+                        <Label text="Direction: " />
+                        <Label fx:id="directionLabel" text="[ ]" />
+                     </children>
+                  </HBox>
+                  <HBox prefWidth="200.0">
+                     <children>
+                        <Label text="Floor Requests: " />
+                        <Label fx:id="floorRequestsLabel" text="[ ]" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox prefWidth="200.0">
+                     <children>
+                        <Label text="Door: " />
+                        <Label fx:id="doorStatusLabel" text="[ ]" />
+                     </children>
+                  </HBox>
+                  <HBox prefWidth="200.0">
+                     <children>
+                        <Label text="Clients in Simulation:  " />
+                        <Label fx:id="clientsLabel" text="[ ]" />
+                     </children>
+                  </HBox>
+                  <HBox prefWidth="200.0">
+                     <children>
+                        <Label text="Maintenance Crew in Simulation: " />
+                        <Label fx:id="maintenanceCrewLabel" text="[ ]" />
+                     </children>
+                  </HBox>
+                  <HBox prefWidth="200.0">
+                     <children>
+                        <Label text="Average Waiting Time: " />
+                        <Label fx:id="averageWaitingTimeLabel" text="[ ]" />
+                     </children>
+                  </HBox>
+                  <HBox prefWidth="200.0">
+                     <children>
+                        <Label text="Client Complaints: " />
+                        <Label fx:id="complaintLabel" text="0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <ScrollPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+         <content>
+            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0">
+               <children>
+                  <HBox>
+                     <children>
+                        <Label text="Floor 6: " />
+                        <Label fx:id="floorSixthLabel" text="[ ]" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label text="Queue: " />
+                        <Label fx:id="queueSixthLabel" text="[ ]" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label text="Floor 5: " />
+                        <Label fx:id="floorFifthLabel" text="[ ]" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label text="Queue: " />
+                        <Label fx:id="queueFifthLabel" text="[ ]" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label text="Floor 4: " />
+                        <Label fx:id="floorFourthLabel" text="[ ]" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label text="Queue: " />
+                        <Label fx:id="queueFourthLabel" text="[ ]" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label text="Floor 3: " />
+                        <Label fx:id="floorThirdLabel" text="[ ]" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label text="Queue: " />
+                        <Label fx:id="queueThirdLabel" text="[ ]" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label text="Floor 2: " />
+                        <Label fx:id="floorSecondLabel" text="[ ]" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label text="Queue: " />
+                        <Label fx:id="queueSecondLabel" text="[ ]" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label text="Floor 1: " />
+                        <Label fx:id="floorFirstLabel" text="[ ]" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label text="Queue: " />
+                        <Label fx:id="queueFirstLabel" text="[ ]" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label text="Floor 0: " />
+                        <Label fx:id="floorZeroLabel" text="[ ]" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label text="Queue: " />
+                        <Label fx:id="queueZeroLabel" text="[ ]" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </content>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </ScrollPane>
+      <HBox alignment="TOP_CENTER" spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#oneTickAction" text="+1 Tick" />
+            <Button mnemonicParsing="false" onAction="#tenTickAction" text="+10 Tick" />
+            <Button mnemonicParsing="false" onAction="#hundredTickAction" text="+100 Tick" />
+            <Button mnemonicParsing="false" onAction="#fiveHundredTickAction" text="+500 Tick" />
+            <Button mnemonicParsing="false" onAction="#thousandTickAction" text="+1000 Tick" />
+         </children>
+      </HBox>
+      <Button mnemonicParsing="false" onAction="#statisticsButton" text="Generate Stats" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</VBox>
